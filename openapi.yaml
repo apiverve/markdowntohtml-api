@@ -1,23 +1,25 @@
 openapi: 3.0.4
 info:
   title: Markdown to HTML
-  description: Markdown to HTML parses markdown syntax and converts it to clean, semantic HTML suitable for web rendering and content management.
+  description: >-
+    Markdown to HTML parses markdown syntax and converts it to clean, semantic
+    HTML suitable for web rendering and content management.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/markdowntohtml:
     post:
       summary: Convert Markdown to HTML
-      description: Markdown to HTML parses markdown syntax and converts it to clean, semantic HTML suitable for web rendering and content management.
+      description: Convert markdown text to HTML
       operationId: markdowntohtml
       parameters: []
       responses:
@@ -35,16 +37,17 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   html: >
                     <h1>Hello World</h1>
 
-                    <p>This is a <strong>bold</strong> statement and this is <em>italic</em>.</p>
+                    <p>This is a <strong>bold</strong> statement and this is
+                    <em>italic</em>.</p>
 
                     <h2>Features</h2>
 
@@ -66,7 +69,7 @@ paths:
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
       requestBody:
         required: true
         content:
@@ -77,45 +80,8 @@ paths:
                 markdown:
                   type: string
                   description: Markdown text to convert (max 100,000 characters)
-                  example: >-
-                    # Hello World
-
-
-                    This is a **bold** statement and this is *italic*.
-
-
-                    ## Features
-
-
-                    - Easy to use
-
-                    - Fast conversion
-
-                    - Supports common markdown syntax
-
-
-                    [Link to example](https://example.com)
               required:
-              - markdown
-              example:
-                markdown: >-
-                  # Hello World
-
-
-                  This is a **bold** statement and this is *italic*.
-
-
-                  ## Features
-
-
-                  - Easy to use
-
-                  - Fast conversion
-
-                  - Supports common markdown syntax
-
-
-                  [Link to example](https://example.com)
+                - markdown
 components:
   securitySchemes:
     api_key:
@@ -123,4 +89,17 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
+sampleRequest:
+  markdown: |-
+    # Hello World
+
+    This is a **bold** statement and this is *italic*.
+
+    ## Features
+
+    - Easy to use
+    - Fast conversion
+    - Supports common markdown syntax
+
+    [Link to example](https://example.com)
