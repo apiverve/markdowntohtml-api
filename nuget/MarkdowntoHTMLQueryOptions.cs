@@ -12,7 +12,6 @@ namespace APIVerve.API.MarkdowntoHTML
     {
         /// <summary>
         /// Markdown text to convert (max 100,000 characters)
-        /// Example: # Title\n\nThis is **bold** text.
         /// </summary>
         [JsonProperty("markdown")]
         public string Markdown { get; set; }
