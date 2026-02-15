@@ -10,20 +10,14 @@ if os.path.exists(requirements_file):
 
 setup(
     name='apiverve_markdowntohtml',
-    version='1.1.12',
+    version='1.1.13',
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,
     description='Markdown to HTML parses markdown syntax and converts it to clean, semantic HTML suitable for web rendering and content management.',
     author='APIVerve',
     author_email='hello@apiverve.com',
-    url='https://apiverve.com',
-    project_urls={
-        'Homepage': 'https://apiverve.com',
-        'Documentation': 'https://docs.apiverve.com/ref/markdowntohtml',
-        'Source': 'https://github.com/apiverve/markdowntohtml-api',
-        'Bug Tracker': 'https://github.com/apiverve/markdowntohtml-api/issues'
-    },
+    url='https://markdowntohtml.apiverve.com?utm_source=pypi&utm_medium=homepage',
     classifiers=[
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
