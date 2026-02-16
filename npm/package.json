@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/markdowntohtml",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "Markdown to HTML parses markdown syntax and converts it to clean, semantic HTML suitable for web rendering and content management.",
   "main": "index.js",
   "types": "index.d.ts",
