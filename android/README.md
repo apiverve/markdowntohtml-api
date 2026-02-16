@@ -26,7 +26,7 @@ Add the dependency:
 
 ```gradle
 dependencies {
-    implementation 'com.github.apiverve:markdowntohtml-api:1.1.13'
+    implementation 'com.github.apiverve:markdowntohtml-api:1.1.14'
 }
 ```
 
@@ -47,7 +47,17 @@ MarkdowntoHTMLAPIClient client = new MarkdowntoHTMLAPIClient("YOUR_API_KEY");
 try {
     // Prepare request parameters
     Map<String, Object> parameters = new HashMap<>();
-    parameters.put("markdown", "# Title\n\nThis is **bold** text.");
+    parameters.put("markdown", "# Hello World
+
+This is a **bold** statement and this is *italic*.
+
+## Features
+
+- Easy to use
+- Fast conversion
+- Supports common markdown syntax
+
+[Link to example](https://example.com)");
 
     // Execute the request
     APIResponse response = client.execute(parameters);
