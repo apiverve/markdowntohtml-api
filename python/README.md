@@ -44,7 +44,17 @@ from apiverve_markdowntohtml.apiClient import MarkdowntohtmlAPIClient
 # Initialize the client with your APIVerve API key
 api = MarkdowntohtmlAPIClient("[YOUR_API_KEY]")
 
-query = { "markdown": "# Hello World\n\nThis is a **bold** statement and this is *italic*.\n\n## Features\n\n- Easy to use\n- Fast conversion\n- Supports common markdown syntax\n\n[Link to example](https://example.com)" }
+query = { "markdown": "# Hello World
+
+This is a **bold** statement and this is *italic*.
+
+## Features
+
+- Easy to use
+- Fast conversion
+- Supports common markdown syntax
+
+[Link to example](https://example.com)" }
 
 try:
     # Make the API call
@@ -82,7 +92,17 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "markdown": "# Hello World\n\nThis is a **bold** statement and this is *italic*.\n\n## Features\n\n- Easy to use\n- Fast conversion\n- Supports common markdown syntax\n\n[Link to example](https://example.com)" }
+query = { "markdown": "# Hello World
+
+This is a **bold** statement and this is *italic*.
+
+## Features
+
+- Easy to use
+- Fast conversion
+- Supports common markdown syntax
+
+[Link to example](https://example.com)" }
 ```
 
 ###### Simple Request
@@ -122,7 +142,17 @@ from apiverve_markdowntohtml.apiClient import MarkdowntohtmlAPIClient, Markdownt
 
 api = MarkdowntohtmlAPIClient("[YOUR_API_KEY]")
 
-query = { "markdown": "# Hello World\n\nThis is a **bold** statement and this is *italic*.\n\n## Features\n\n- Easy to use\n- Fast conversion\n- Supports common markdown syntax\n\n[Link to example](https://example.com)" }
+query = { "markdown": "# Hello World
+
+This is a **bold** statement and this is *italic*.
+
+## Features
+
+- Easy to use
+- Fast conversion
+- Supports common markdown syntax
+
+[Link to example](https://example.com)" }
 
 try:
     result = api.execute(query)
@@ -143,7 +173,17 @@ from apiverve_markdowntohtml.apiClient import MarkdowntohtmlAPIClient, Markdownt
 
 api = MarkdowntohtmlAPIClient("[YOUR_API_KEY]")
 
-query = { "markdown": "# Hello World\n\nThis is a **bold** statement and this is *italic*.\n\n## Features\n\n- Easy to use\n- Fast conversion\n- Supports common markdown syntax\n\n[Link to example](https://example.com)" }
+query = { "markdown": "# Hello World
+
+This is a **bold** statement and this is *italic*.
+
+## Features
+
+- Easy to use
+- Fast conversion
+- Supports common markdown syntax
+
+[Link to example](https://example.com)" }
 
 try:
     result = api.execute(query)
@@ -177,7 +217,17 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_markdowntohtml.apiClient import MarkdowntohtmlAPIClient, MarkdowntohtmlAPIClientError
 
-query = { "markdown": "# Hello World\n\nThis is a **bold** statement and this is *italic*.\n\n## Features\n\n- Easy to use\n- Fast conversion\n- Supports common markdown syntax\n\n[Link to example](https://example.com)" }
+query = { "markdown": "# Hello World
+
+This is a **bold** statement and this is *italic*.
+
+## Features
+
+- Easy to use
+- Fast conversion
+- Supports common markdown syntax
+
+[Link to example](https://example.com)" }
 
 # Using context manager ensures proper cleanup
 with MarkdowntohtmlAPIClient("[YOUR_API_KEY]") as api:
@@ -203,7 +253,17 @@ from apiverve_markdowntohtml.apiClient import MarkdowntohtmlAPIClient
 # Enable debug mode
 api = MarkdowntohtmlAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "markdown": "# Hello World\n\nThis is a **bold** statement and this is *italic*.\n\n## Features\n\n- Easy to use\n- Fast conversion\n- Supports common markdown syntax\n\n[Link to example](https://example.com)" }
+query = { "markdown": "# Hello World
+
+This is a **bold** statement and this is *italic*.
+
+## Features
+
+- Easy to use
+- Fast conversion
+- Supports common markdown syntax
+
+[Link to example](https://example.com)" }
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -218,8 +278,19 @@ from apiverve_markdowntohtml.apiClient import MarkdowntohtmlAPIClient
 
 api = MarkdowntohtmlAPIClient("[YOUR_API_KEY]")
 
+query = { "markdown": "# Hello World
+
+This is a **bold** statement and this is *italic*.
+
+## Features
+
+- Easy to use
+- Fast conversion
+- Supports common markdown syntax
+
+[Link to example](https://example.com)" }
+
 try:
-    query = { "markdown": "# Hello World\n\nThis is a **bold** statement and this is *italic*.\n\n## Features\n\n- Easy to use\n- Fast conversion\n- Supports common markdown syntax\n\n[Link to example](https://example.com)" }
     result = api.execute(query)
     print(result)
 finally:
