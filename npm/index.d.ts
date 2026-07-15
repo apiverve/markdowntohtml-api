@@ -4,18 +4,30 @@ declare module '@apiverve/markdowntohtml' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface markdowntohtmlResponse {
     status: string;
     error: string | null;
     data: MarkdowntoHTMLData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface MarkdowntoHTMLData {
-      html:           string;
-      markdownLength: number;
-      htmlLength:     number;
+      html:           null | string;
+      markdownLength: number | null;
+      htmlLength:     number | null;
   }
 
   export default class markdowntohtmlWrapper {
