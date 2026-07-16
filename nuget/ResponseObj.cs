@@ -25,6 +25,9 @@ namespace APIVerve.API.MarkdowntoHTML
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -33,9 +36,21 @@ namespace APIVerve.API.MarkdowntoHTML
         public string Html { get; set; }
 
         [JsonProperty("markdownLength")]
-        public long MarkdownLength { get; set; }
+        public long? MarkdownLength { get; set; }
 
         [JsonProperty("htmlLength")]
-        public long HtmlLength { get; set; }
+        public long? HtmlLength { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
