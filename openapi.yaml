@@ -2,8 +2,9 @@ openapi: 3.0.4
 info:
   title: Markdown to HTML
   description: >-
-    Markdown to HTML parses markdown syntax and converts it to clean, semantic
-    HTML suitable for web rendering and content management.
+    Markdown to HTML is a markdown converter API that parses markdown syntax and
+    converts it to clean, semantic HTML suitable for web rendering and content
+    management.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +19,7 @@ servers:
 paths:
   /v1/markdowntohtml:
     post:
-      summary: Convert Markdown to HTML
+      summary: Markdown to HTML
       description: Convert markdown text to HTML
       operationId: markdowntohtml
       parameters: []
