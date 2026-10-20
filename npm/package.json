@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/markdowntohtml",
-  "version": "1.2.0",
-  "description": "Markdown to HTML parses markdown syntax and converts it to clean, semantic HTML suitable for web rendering and content management.",
+  "version": "1.2.2",
+  "description": "Markdown to HTML is a markdown converter API that parses markdown syntax and converts it to clean, semantic HTML suitable for web rendering and content management.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "markdown to html", "html converter", "markdown parser", "html generator", "markdown rendering"
+    "markdown to html api", "markdown converter api", "markdown conversion api", "markdown to html", "markdown parser api"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/markdowntohtml-api/issues"
   },
-  "homepage": "https://markdowntohtml.apiverve.com?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/markdowntohtml?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
