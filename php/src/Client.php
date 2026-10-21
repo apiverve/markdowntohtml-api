@@ -29,7 +29,7 @@ This is a **bold** statement and this is *italic*.
  * print_r($response);
  * ```
  *
- * @see https://markdowntohtml.apiverve.com?utm_source=php&utm_medium=readme
+ * @see https://apiverve.com/marketplace/markdowntohtml?utm_source=php&utm_medium=referral&utm_content=readme
  */
 class Client
 {

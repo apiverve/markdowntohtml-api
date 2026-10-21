@@ -1,6 +1,6 @@
 # Markdown to HTML API - PHP Package
 
-Markdown to HTML parses markdown syntax and converts it to clean, semantic HTML suitable for web rendering and content management.
+Markdown to HTML is a markdown converter API that parses markdown syntax and converts it to clean, semantic HTML suitable for web rendering and content management.
 
 ## Installation
 
@@ -103,11 +103,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/markdowntohtml?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/markdowntohtml?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://markdowntohtml.apiverve.com?utm_source=php&utm_medium=readme](https://markdowntohtml.apiverve.com?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/markdowntohtml?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/markdowntohtml?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License

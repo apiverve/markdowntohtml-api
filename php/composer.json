@@ -1,7 +1,7 @@
 {
     "name": "apiverve/markdowntohtml",
-    "description": "Markdown to HTML parses markdown syntax and converts it to clean, semantic HTML suitable for web rendering and content management.",
-    "version": "1.2.0",
+    "description": "Markdown to HTML is a markdown converter API that parses markdown syntax and converts it to clean, semantic HTML suitable for web rendering and content management.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "markdowntohtml",
+        "markdown to html api",
+        "markdown converter api",
+        "markdown conversion api",
         "markdown to html",
-        "html converter",
-        "markdown parser",
-        "html generator",
-        "markdown rendering"
+        "markdown parser api"
     ],
-    "homepage": "https://markdowntohtml.apiverve.com?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/markdowntohtml?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/markdowntohtml",
