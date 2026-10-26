@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/markdowntohtml",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Markdown to HTML is a markdown converter API that parses markdown syntax and converts it to clean, semantic HTML suitable for web rendering and content management.",
   "main": "index.js",
   "types": "index.d.ts",
