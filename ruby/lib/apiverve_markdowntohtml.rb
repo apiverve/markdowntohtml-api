@@ -4,6 +4,6 @@ require_relative "apiverve_markdowntohtml/client"
 
 module APIVerve
   module Markdowntohtml
-    VERSION = "1.2.3"
+    VERSION = "1.2.4"
   end
 end
