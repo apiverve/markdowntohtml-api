@@ -1,6 +1,6 @@
 name: apiverve_markdowntohtml
 description: "Markdown to HTML is a markdown converter API that parses markdown syntax and converts it to clean, semantic HTML suitable for web rendering and content management."
-version: 1.2.5
+version: 1.2.6
 homepage: https://apiverve.com/marketplace/markdowntohtml?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/markdowntohtml-api/tree/main/dart
 

@@ -49,7 +49,7 @@ final _formatPatterns = {
 /// For more information, visit: https://apiverve.com/marketplace/markdowntohtml?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
-/// * [markdown] (required) - Markdown text to convert (max 100,000 characters)
+/// * [markdown] (required) - Markdown text to convert (max 500,000 characters); leading indentation and trailing spaces are kept [minLength: 1, maxLength: 500000]
 class MarkdowntohtmlClient {
   final String apiKey;
   final String baseUrl;
@@ -57,7 +57,7 @@ class MarkdowntohtmlClient {
 
   /// Validation rules for parameters.
   static final Map<String, ValidationRule> _validationRules = <String, ValidationRule>{
-    'markdown': ValidationRule(type: 'string', required: true),
+    'markdown': ValidationRule(type: 'string', required: true, minLength: 1, maxLength: 500000),
   };
 
   MarkdowntohtmlClient(this.apiKey, {
