@@ -11,7 +11,7 @@ namespace APIVerve.API.MarkdowntoHTML
     public class MarkdowntoHTMLQueryOptions
     {
         /// <summary>
-        /// Markdown text to convert (max 100,000 characters)
+        /// Markdown text to convert (max 500,000 characters); leading indentation and trailing spaces are kept
         /// </summary>
         [JsonProperty("markdown")]
         public string Markdown { get; set; }
