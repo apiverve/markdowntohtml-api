@@ -44,7 +44,7 @@ class Client
      * Validation rules for parameters
      */
     private const VALIDATION_RULES = [
-        'markdown' => ['type' => 'string', 'required' => true]
+        'markdown' => ['type' => 'string', 'required' => true, 'minLength' => 1, 'maxLength' => 500000]
     ];
 
     /**
