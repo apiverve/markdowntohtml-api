@@ -29,7 +29,7 @@ This is a **bold** statement and this is *italic*.
       DEFAULT_TIMEOUT = 30
 
       # Validation rules for parameters
-      VALIDATION_RULES = { 'markdown' => { type: 'string', required: true } }
+      VALIDATION_RULES = { 'markdown' => { type: 'string', required: true, min_length: 1, max_length: 500000 } }
 
       # Format validation patterns
       FORMAT_PATTERNS = {
